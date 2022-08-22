@@ -24,7 +24,7 @@ str_second_number = input('Enter a second number:')
 first_number = float(str_first_number)
 second_number = float(str_second_number)
 sum =(first_number + second_number)
-print('The sum is:', int(sum))
+print('The sum is:', sum)
 
 
 
