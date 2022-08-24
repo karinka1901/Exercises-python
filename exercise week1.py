@@ -1,17 +1,13 @@
-#("ex1 print your name")
-#print('hello, Karin!')
-
-#("ex2 ask for a radius of a circle and print its area")
-#radius = input("enter the radius:")
-#area = float(radius)**2 * 3.14
-#print("the area of a circle is " + str(area))
-
-#("ex3 ask for the lenght and width of a rectangle and print the perimeter, area")
-#lenght = input("enter the lenght:")
-#width = input("enter the width:")
-#parameter = (float(lenght) + float(width)) * 2
-#area_rec = float(lenght) * float(width)
-#print("the parameter of the rectangular is " + str(parameter))
-#print("the area of the rectangular is " + str(area_rec))
 
 
+#ex4 three integers ->the sum, product, average
+first_int = input("enter the first number: ")
+second_int = input("enter the second number: ")
+third_int = input("enter the third number: ")
+sum_int = int(first_int) + int(second_int) + int(third_int)
+product_int = int(first_int) * int(second_int) * int(third_int)
+average_int = ((int(first_int) + int(second_int) + int(third_int)) / 3)
+
+print("the sum is " + str(sum_int))
+print("the product is " + str(product_int))
+print("the average is " + str(average_int))
