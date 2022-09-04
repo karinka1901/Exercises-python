@@ -6,7 +6,7 @@ while num <= 1000:
         print(num)
     num = num + 1
 
-#ex2 :
+#ex2 - method 1:
 print('Exercise 2')
 inch = float(input("Enter the number in inches: "))
 inch_cm = 2.54 * inch
