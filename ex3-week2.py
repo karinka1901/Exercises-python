@@ -7,8 +7,8 @@ while num <= 1000:
         print(num)
     num = num + 1
 #
-# #ex2 - method 1:
-print('--------Exercise 2.1--------')
+# #ex2:
+print('--------Exercise 2--------')
 inch = float(input("Enter the number in inches: "))
 inch_cm = 2.54 * inch
 while inch >= 0:
@@ -32,6 +32,7 @@ while True:
         biggest_num = number_float
 
 #ex3 - second method
+print("--------Exercise 3 -Second method--------")
 numlist = []
 while True:
     number = input("Enter the number: ")
