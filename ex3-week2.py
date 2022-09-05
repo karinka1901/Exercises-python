@@ -78,20 +78,19 @@ while attempts >= 0:
             break
 
 #ex6
-circle_counter = 0 #number of points that falls into circle
+print("--------Exercise 6--------")
+import random
+n = 0 #number of points that falls into circle
 counter = 0
 while True:
-    number = int(input('Enter the amount to generate: '))
-    while counter <= number:
-        x = random.uniform(0,1)
-        y = random.uniform(0,1)
+    N = int(input('Enter the amount to generate: '))
+    while counter <= N:
+        x = random.uniform(0,1) #random points that fall into an x-axis
+        y = random.uniform(0,1) #random points that fall into an y-axis
         counter += 1
-        if x**2 + y**2 < 1:
-            circle_counter += 1
-    pi_result = (4*circle_counter) / number
-    print("The approximation of pi is " + str(pi_result))
-    break
-
-    
+        if x**2 + y**2 < 1:  
+            n += 1   #points that fall into a circle if the inequation is true
+    pi_approx = (4*n) / N  #approximation of the value of pi
+    print("The approximation of pi is " + str(pi_approx))
     
 
