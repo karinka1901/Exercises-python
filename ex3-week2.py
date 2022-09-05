@@ -90,6 +90,7 @@ while True:
             circle_counter += 1
     pi_result = (4*circle_counter) / number
     print("The approximation of pi is " + str(pi_result))
+    break
 
     
     
