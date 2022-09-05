@@ -78,10 +78,18 @@ while attempts >= 0:
             break
 
 #ex6
-print("--------Exercise 6--------")
-    
-
-
+circle_counter = 0 #number of points that falls into circle
+counter = 0
+while True:
+    number = int(input('Enter the amount to generate: '))
+    while counter <= number:
+        x = random.uniform(0,1)
+        y = random.uniform(0,1)
+        counter += 1
+        if x**2 + y**2 < 1:
+            circle_counter += 1
+    pi_result = (4*circle_counter) / number
+    print("The approximation of pi is " + str(pi_result))
 
     
     
