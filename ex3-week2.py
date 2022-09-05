@@ -1,13 +1,13 @@
 import random
-# #ex1
+#ex1
 print('--------Exercise 1:--------')
 num = int(1)
 while num <= 1000:
     if num % 3 == 0:
         print(num)
     num = num + 1
-#
-# #ex2:
+
+#ex2:
 print('--------Exercise 2--------')
 inch = float(input("Enter the number in inches: "))
 inch_cm = 2.54 * inch
@@ -16,8 +16,8 @@ while inch >= 0:
     inch = float(input("Enter the number in inches: "))
     if inch < 0:
         print("The program has ended")
-#
-# #ex3
+        
+#ex3
 print("--------Exercise 3--------")
 smallest_num = 0
 biggest_num = 0
@@ -27,22 +27,17 @@ while True:
         print("The smallest number is " + str(smallest_num))
         print("The biggest number is " + str(biggest_num))
         break
+    if smallest_num == 0 and biggest_num == 0:
+        if float(number) != 0:
+            if float(number) < 0:
+                smallest_num = float(number)
+            else:
+                biggest_num = float(number)
     number_float = float(number)
-    if number_float < smallest_num:
-        smallest_num = number_float
-    if number_float > biggest_num:
+    if biggest_num < number_float:
         biggest_num = number_float
-
-# #ex3 - second method
-# print("--------Exercise 3 -Second method--------")
-# numlist = []
-# while True:
-#     number = input("Enter the number: ")
-#     if number == "":
-#         print("The smallest number is " + str(min(numlist)))
-#         print("The biggest number is " + str(max(numlist)))
-#         break
-#     numlist.append(float(number))
+    if smallest_num > number_float:
+        smallest_num = number_float
 
 #ex4
 print("--------Exercise 4--------")
@@ -67,15 +62,15 @@ while attempts >= 0:
     ask_username = input("Enter the username: ")
     ask_password = input("Enter the password:")
     
-    if ask_username == username and ask_password == password:
-        print("Welcome!")
-        break
     if ask_username != username or ask_password != password:
-        print("Try again! " + str(attempts) + " attempts remaining.")
+        print("Wrong credentials " + str(attempts) + " attempts remaining.")
         attempts -= 1
         if attempts < 0:
             print("Access denied!")
             break
+    else:
+        print("Welcome!")
+        break
 
 #ex6
 print("--------Exercise 6--------")
@@ -92,5 +87,5 @@ while True:
             n += 1   #points that fall into a circle if the inequation is true
     pi_approx = (4*n) / N  #approximation of the value of pi
     print("The approximation of pi is " + str(pi_approx))
-    
+    break
 
