@@ -14,6 +14,8 @@ inch_cm = 2.54 * inch
 while inch >= 0:
     print(str(inch_cm) + ' cm')
     inch = float(input("Enter the number in inches: "))
+    if inch < 0:
+        print("The program has ended")
 #
 # #ex3
 print("--------Exercise 3--------")
