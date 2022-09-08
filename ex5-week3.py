@@ -24,9 +24,19 @@ import random
 
 #ex3
 print("----------------exercise 3------------------")
-divisible_numbers = []
-number = int(input("Enter the number"))
-for x in range(1,number):
-    divisible_numbers.append(number)
-    number % x == 0
+isPrime = False
+number = int(input("Enter the number: "))
+if number > 1:
+    for i in range (2, number):
+        if (number % i) == 0:
+            isPrime = True
+            break
+if isPrime:
+    print(str(number) + " is not a prime number")
+else:
+    print(str(number) + " is a prime number")
+    
+
+
+
 

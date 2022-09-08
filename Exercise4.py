@@ -50,6 +50,23 @@ while True:
          break
      numlist.append(float(number))
 
+#ex 3  third method:
+prompt = "Give the number: "
+s = input(prompt)
+if s != "":
+    smallest =int(s)
+    largest = smallest
+while s != "":
+    n = int(s)
+    if n < smallest:
+        smallest = n
+    if n > largest:
+        largest = n
+    s = input(prompt)
+else:
+    print(smallest)
+    print(largest)
+
 #ex4
 print("--------Exercise 4--------")
 number = random.randint(1,10)
@@ -85,7 +102,6 @@ while attempts >= 0:
 
 #ex6
 print("--------Exercise 6--------")
-import random
 n = 0 #number of points that fall into circle
 counter = 0
 while True:
