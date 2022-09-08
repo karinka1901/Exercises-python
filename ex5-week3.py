@@ -36,14 +36,23 @@
 # else:
 #     print(str(number) + " is a prime number")
     
-#ex4
+#ex4 method 1
+# print("----------------exercise 4------------------")
+# city_names = []
+
+# for i in range (5):
+#     city = input("Enter the name of a city: ")
+#     city_names.append(city)
+# print(*city_names, sep = "\n")
+
+#ex4 method 2
 print("----------------exercise 4------------------")
 city_names = []
-
-for i in range (1,6):
+for i in range (5):
     city = input("Enter the name of a city: ")
     city_names.append(city)
-print(city_names)
+for x in range(len(city_names)):
+    print(city_names[x])
 
 
 
