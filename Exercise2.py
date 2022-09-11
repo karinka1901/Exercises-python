@@ -49,5 +49,3 @@ print("3-digit code: " + f"{random.randint(0, 999):03d}")
 #print(str(random.randint(0,9)) + str(random.randint(0,9) + str(random.randint(0,9)))
 
 print("4-digit code: " + str(random.randint(1,6)) + str(random.randint(1,6)) + str(random.randint(1,6)) + str(random.randint(1,6)))
-
-input('Press ENTER to exit')
