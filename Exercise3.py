@@ -34,7 +34,6 @@ h_value = int(input('Enter your hemoglobin value: '))
 #male: 134 - 167
 
 if b_gender == 'F':
-
     if h_value >= 117 and h_value <= 155:
         print('Your hemoglobin level is normal')
     if h_value < 117:
