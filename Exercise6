@@ -77,13 +77,10 @@ d = float(input("Enter the diameter of the first pizza: "))
 cost = float(input("Enter the price of the first pizza: "))
 second_pizza = pizza_value(d,cost)
 print("The cost of the second pizza is " + f"{str(second_pizza):.6}" + " eur per square meter.")
-while True:
-    if first_pizza > second_pizza:
-        print("The second pizza is cheaper.")
-        break
-    if second_pizza > first_pizza:
-        print("The first pizza is cheaper.")
-        break
-    if second_pizza == first_pizza:
-        print("Both pizzas cost the same.")
-        break
+
+if first_pizza > second_pizza:
+    print("The second pizza is cheaper.")
+if second_pizza > first_pizza:
+    print("The first pizza is cheaper.")
+if second_pizza == first_pizza:
+    print("Both pizzas cost the same.")
