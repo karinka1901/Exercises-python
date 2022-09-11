@@ -1,7 +1,7 @@
 import random
 
 
-# # #ex1
+# #ex1
 print("----------------exercise 1------------------")
 times_to_roll = input("How many dice to roll? ")
 sum_dice = 0
@@ -12,7 +12,7 @@ for dice_roll in range(int(times_to_roll)):
     sum_dice += random_dice
 print(sum_dice)
 
-# # #ex2
+# #ex2
 print("----------------exercise 2------------------")
 numbers = []
 while True:
@@ -20,9 +20,11 @@ while True:
     if number == "":
         numbers.sort(reverse=True)
         print(numbers[:5])
+        break
     numbers.append(int(number))
 
-# #ex3
+
+#ex3
 print("----------------exercise 3------------------")
 isPrime = False
 number = int(input("Enter the number: "))
@@ -37,13 +39,13 @@ else:
     print(str(number) + " is a prime number")
     
 #ex4 method 1
-print("----------------exercise 4------------------")
-city_names = []
+# print("----------------exercise 4------------------")
+# city_names = []
 
-for i in range (5):
-    city = input("Enter the name of a city: ")
-    city_names.append(city)
-print(*city_names, sep = "\n")
+# for i in range (5):
+#     city = input("Enter the name of a city: ")
+#     city_names.append(city)
+# print(*city_names, sep = "\n")
 
 #ex4 method 2
 print("----------------exercise 4------------------")
