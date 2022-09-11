@@ -65,7 +65,7 @@ while True:
         print('Correct!')
         break
 
-# # #ex5
+ #ex5
 print("--------Exercise 5--------")
 username = "python"
 password = "rules"
@@ -84,7 +84,7 @@ while attempts >= 0:
         print("Welcome!")
         break
 
-# # #ex6
+#ex6
 print("--------Exercise 6--------")
 n = 0 #number of points that fall into circle
 counter = 0
@@ -99,4 +99,3 @@ while True:
     pi_approx = (4*n) / N  #approximation of the value of pi
     print("The approximation of pi is " + str(pi_approx))
     break
-
