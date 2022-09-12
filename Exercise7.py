@@ -35,7 +35,7 @@ while True:
 print("---------------------------Exercise3-----------------------")
 airports = {"EFHK":"Helsinki Vantaa Airport"}
 while True:
-   select = int(input("Enter the number for what you would like to do: \n1.Enter airport \n2.Fetch airport information \n3.Quit\nOption: "))
+   select = int(input("Enter a number for what you would like to do: \n1.Enter airport \n2.Fetch airport information \n3.Quit\nOption: "))
    if select == 1:
       code_airport = input("Enter ICAO code: ")
       name_airport = input('Enter airport: ')
@@ -48,5 +48,4 @@ while True:
    elif select == 3:
       break
    else:
-      print("Error: Enter a number between 1-3")
-            # "EPWA":"Warsaw Chopin Airport"
+      print("Error: Enter a number between 1-3\n")
