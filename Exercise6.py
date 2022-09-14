@@ -54,7 +54,7 @@ print("-----------------Exercise5-----------------")
 def remove_uneven(list):
     uneven = []
     for i in range(len(list)):
-        if list[i] % 2 != 0:
+        if list[i] % 2 == 0:
             uneven.append(list[i])
     return uneven
 
