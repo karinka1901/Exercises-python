@@ -5,7 +5,7 @@
 # from the airport database used on this course.
 # 
 
-# print("------------------exercise 1--------------------")
+print("------------------exercise 1--------------------")
 import mysql.connector
 
 connection = mysql.connector.connect(
@@ -18,16 +18,17 @@ connection = mysql.connector.connect(
          )
 
 def getAirport (ICAO):
-    sql = "SELECT name FROM country"
-    sql += " WHERE continent='" + ICAO + "'"
+    sql = "SELECT airport.name, country.name FROM airport, country"
+    #sql += "WHERE airport.iso_country = country.iso_country and airport.ident='" + ICAO + "'"
+    sql += " WHERE ident='" + ICAO + "'"
     print(sql)
     cursor = connection.cursor()
     cursor.execute(sql)
     result = cursor.fetchall()
     if cursor.rowcount > 0:
         for row in result:
-            print(f" {row[0]}")
-    return
+            print(f"The name of the airport is {row[0]} and it is located in {row[1]}")
+            return
 
 ICAO = input("Enter ICAO code: ")
 getAirport(ICAO)
