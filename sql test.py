@@ -23,7 +23,7 @@
 # last_name = input("Enter last name: ")
 # getEmployeesByLastName(last_name)
          
-
+#1
 import mysql.connector
 
 connection = mysql.connector.connect(
@@ -41,3 +41,4 @@ mycursor.execute("SHOW TABLES")
 
 for x in mycursor:
   print(x)
+  
