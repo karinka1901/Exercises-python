@@ -45,7 +45,7 @@ def get_country (area_code):
             print(f"The airport located in this area is {row[0]} and the type of the airport is {row[1]}")
         return
 
-area_code = input("Enter area code: ")
+area_code = input("Enter area code(ex FI): ")
 get_country(area_code)
 
 
@@ -72,9 +72,8 @@ def get_location (area_code):
             location.append(row[0])
         return location
 
-
 area_code1 = input("Enter area code of the first airport: ")
-area_code2 = input("Enter area code of the first airport: ")
+area_code2 = input("Enter area code of the second airport: ")
 print(f"The distance between the two airports is {geodesic(get_location(area_code1), get_location(area_code2)).kilometers:.6} km")
 # print(get_location(area_code1), get_location(area_code2))
 
