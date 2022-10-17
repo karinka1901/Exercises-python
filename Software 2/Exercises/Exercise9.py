@@ -30,11 +30,11 @@ class Car:  # type: ignore
             self.current_speed = 0
         
 car = Car("ABC-123", 142)
-print(f"{car.current_speed} km/h")    #speed = 0
+print(f"{car.current_speed} km/h")    
 car.accelerate(30)
-print(f"{car.current_speed} km/h")    #speed = 30
+print(f"{car.current_speed} km/h")   
 car.accelerate(70)
-print(f"{car.current_speed} km/h")    #speed = 100
+print(f"{car.current_speed} km/h")   
 car.accelerate(50)
 print(f"{car.current_speed} km/h")    #speed is capped at 142
 car.accelerate(-200)
@@ -64,9 +64,9 @@ class Car:  # type: ignore
 car = Car("ABC-123", 142)
 car.accelerate(60)
 car.traveled_distance = 2000
-print(f"The initial distance is {car.traveled_distance} km\h")
+print(f"The initial distance is {car.traveled_distance} km/h")
 car.drive(1.5)
-print(f"The distance traveled in 1.5h at the constant speed of 60 km\h is {car.traveled_distance} km")
+print(f"The distance traveled in 1.5h at the constant speed of 60 km/h is {car.traveled_distance} km")
 
 #exercise 4
 print("\n------------------------------exercise 4---------------------------------")
