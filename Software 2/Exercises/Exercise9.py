@@ -2,7 +2,7 @@ import random
 
 #exercise 1
 print("------------------------------exercise 1---------------------------------")
-class Car:
+class Car:  # type: ignore
     def __init__(self, reg_number, max_speed, current_speed = 0, traveled_distance = 0):
         self.reg_number = reg_number
         self.max_speed = max_speed
@@ -14,7 +14,7 @@ print(f"The registration number of the car is {car.reg_number} and the max speed
 
 #exercise 2
 print("\n------------------------------exercise 2---------------------------------")
-class Car:
+class Car:  # type: ignore
     
     def __init__(self, reg_number, max_speed, current_speed = 0, traveled_distance = 0):
         self.reg_number = reg_number
@@ -43,7 +43,7 @@ print(f"{car.current_speed} km/h")    #speed is reduced to lowest speed of 0
         
 #exercise 3
 print("\n------------------------------exercise 3---------------------------------")
-class Car:
+class Car:  # type: ignore
     
     def __init__(self, reg_number, max_speed, current_speed = 0, traveled_distance = 0):
         self.reg_number = reg_number
@@ -66,7 +66,7 @@ car.accelerate(60)
 car.traveled_distance = 2000
 print(f"The initial distance is {car.traveled_distance} km\h")
 car.drive(1.5)
-print(f"The distance traveled in 1.5h at constant speed of 60 km\h is {car.traveled_distance} km")
+print(f"The distance traveled in 1.5h at the constant speed of 60 km\h is {car.traveled_distance} km")
 
 #exercise 4
 print("\n------------------------------exercise 4---------------------------------")
