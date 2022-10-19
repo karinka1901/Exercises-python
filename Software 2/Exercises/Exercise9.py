@@ -104,9 +104,9 @@ while race_on:
         else: 
             print(f"The car {car_list[car].reg_number} won the race!!")
             race_on = False
-print("The stats are as follows:")
+print("registration number, distance traveled, max speed:")
 for car in range(len(car_list)):
-    print(f"Registration number: {car_list[car].reg_number}, {car_list[car].traveled_distance} km, {car_list[car].max_speed} km/h")
+    print(f"{car_list[car].reg_number}                {car_list[car].traveled_distance} km            {car_list[car].max_speed} km/h")
 
 
 
