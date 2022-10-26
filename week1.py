@@ -1,8 +1,5 @@
-
-
-
 class Person:
-    def __init__(self, name, height):
+    def __init__(self, name: str, height: int):
         self.name = name
         self.height = height
 
@@ -28,17 +25,16 @@ class Room:
         for person in self.persons:
             print(f"name: {person.name}, height: {person.height} cm")
         
-    """
-    def tallest(self):
+    """def tallest(self):
+        max_height = 0
         if self.is_empty == True:
             return None
         else:
             for person in self.persons:
                 max_height = max(person.height)
                 return max_height """
-      
-
-    def tallest(self):
+                
+        def tallest(self):
         max_height = 0
         tallest_person = None
         for person in self.persons:
@@ -46,7 +42,7 @@ class Room:
                 tallest_person = person
                 max_height = person.height
         return tallest_person
-
+      
 
 
     def remove_tallest(self):
@@ -62,8 +58,8 @@ room.add(Person("b", 170))
 room.add(Person("c", 160))
 room.add(Person("d", 150))
 
-print(f"is the room empty: {room.is_empty}")
-print(f"The tallest: {room.tallest}")
+print(f"is the room empty: {room.is_empty()}")
+print(f"The tallest: {room.tallest()}")
 
 print(room.print_info())
 
