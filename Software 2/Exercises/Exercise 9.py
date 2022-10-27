@@ -24,10 +24,10 @@ class Car:  # type: ignore
 
     def accelerate (self, speed_change):
         self.current_speed += speed_change
-        if self.current_speed > self.max_speed:
-            self.current_speed = self.max_speed
+        if self.current_speed > self.max_speed: 
+            self.current_speed = self.max_speed #speed is capped at max speed
         if self.current_speed < 0:
-            self.current_speed = 0
+            self.current_speed = 0  #speed is reduced to lowest speed
         
 car = Car("ABC-123", 142)
 print(f"{car.current_speed} km/h")    
@@ -36,9 +36,9 @@ print(f"{car.current_speed} km/h")
 car.accelerate(70)
 print(f"{car.current_speed} km/h")   
 car.accelerate(50)
-print(f"{car.current_speed} km/h")    #speed is capped at 142
+print(f"{car.current_speed} km/h")    
 car.accelerate(-200)
-print(f"{car.current_speed} km/h")    #speed is reduced to lowest speed of 0
+print(f"{car.current_speed} km/h")  
 
         
 #exercise 3
@@ -86,11 +86,11 @@ class Car:
             self.current_speed = 0
     
     def drive(self, time):
-        self.traveled_distance += time * self.current_speed
+        self.traveled_distance += time * self.current_speed 
 
 #main
 car_list = []
-for i in range(1,10):
+for i in range(10):
     new_car = Car("ABC-" + str(i), random.randint(100,200))
     car_list.append(new_car)
 
@@ -98,15 +98,15 @@ race_on = True
 
 while race_on:
     for car in range (len(car_list)):
-        if car_list[car].traveled_distance <= 10000:
+        if car_list[car].traveled_distance <= 10000: #until one of the cars has advanced at least 10,000 kilometers
             car_list[car].drive(1)
             car_list[car].accelerate(random.randint(-10,15))
         else: 
             print(f"The car {car_list[car].reg_number} won the race!!")
             race_on = False
-print("registration number, distance traveled, max speed:")
+#print("registration number, distance traveled, max speed:")
 for car in range(len(car_list)):
-    print(f"{car_list[car].reg_number}                {car_list[car].traveled_distance} km            {car_list[car].max_speed} km/h")
+    print(f"{car_list[car].reg_number} {car_list[car].traveled_distance}km {car_list[car].max_speed}km/h")
 
 
 
