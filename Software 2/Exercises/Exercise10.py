@@ -1,6 +1,5 @@
-#exercise1
 import random
-
+#exercise1
 
 print("---------------exercise1---------------------")
 
