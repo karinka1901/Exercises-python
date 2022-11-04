@@ -36,7 +36,6 @@ print("---------------------exercise 2-----------------------------")
 
 class Car:
 
-    #km_counter = 0
 
     def __init__(self, reg_number, max_speed, current_speed = 0, traveled_distance = 0):
         self.reg_number = reg_number
