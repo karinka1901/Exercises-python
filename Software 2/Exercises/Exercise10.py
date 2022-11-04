@@ -236,7 +236,7 @@ print(f"Welcome to the {race.name} race!")
 while not race.race_finished(): # while not True
     race.hour_passes()
 
-# while race.race_finished() == False: #(method2)
+# while race.race_finished() == False: #(for the method2)
 #     race.hour_passes()
 
 
