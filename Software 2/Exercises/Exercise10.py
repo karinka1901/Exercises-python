@@ -204,23 +204,26 @@ class Race:
         for car in range (len(self.cars)):
             self.cars[car].drive(1)
             self.cars[car].accelerate(random.randint(-10,15))
-            if car == 9:
-                self.timer += 1
-            if self.timer % 10 == 0 and car == 9:
-                print(f"\n{self.timer} hours has passed")
+            if car == 9: #when all cars drove for an hour
+                self.timer += 1 #adds another h
+            if self.timer % 10 == 0 and car == 9: #will print the status after every 10hours
+                print(f"\n{self.timer} hours has passed") 
                 self.print_status()
 
     def print_status(self):
-        print("registration number, distance traveled, max speed:")
+        #print("registration number, distance traveled, max speed:")
         for car in range(len(self.cars)):
-            print(f"{self.cars[car].reg_number},                {self.cars[car].traveled_distance} km,           {self.cars[car].max_speed} km/h")
+            print(f"{self.cars[car].reg_number} {self.cars[car].traveled_distance}km {self.cars[car].max_speed}km/h")
 
     def race_finished(self):
         for car in range (len(self.cars)):
-            if self.cars[car].traveled_distance >= self.distance:
+            if self.cars[car].traveled_distance >= self.distance: #if any of the cars have driven the entire distance of the race
                 print(f"\n\nThe car {self.cars[car].reg_number} won the race!!")
                 self.print_status()
                 return True
+            # else:
+            #     return False #(method2)
+
 car_list = []
 for i in range(0,10):
     new_car = Car("ABC-" + str(i), random.randint(100,200))
@@ -230,8 +233,12 @@ for i in range(0,10):
 race = Race("Grand Demolition Derby", 8000, car_list)
 print(f"Welcome to the {race.name} race!")
 
-while not race.race_finished():
+while not race.race_finished(): # while not True
     race.hour_passes()
+
+# while race.race_finished() == False: #(method2)
+#     race.hour_passes()
+
 
 
     
