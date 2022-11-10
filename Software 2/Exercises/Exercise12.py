@@ -12,7 +12,8 @@ print(response["value"])
 print("----------------------exercise2----------------------------------")
 
 city = input("Enter the city: ")
-request = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=2553e5564345711d839d4ceb0a760270&units=metric"
+key = "" #paste your key here
+request = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + key +"&units=metric"
 
 try:
     response = requests.get(request)
