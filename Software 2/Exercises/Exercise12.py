@@ -11,8 +11,8 @@ print(response["value"])
 #exercise2
 print("----------------------exercise2----------------------------------")
 
+key = input("Enter your api key: ")
 city = input("Enter the city: ")
-key = "" #paste your key here
 request = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + key +"&units=metric"
 
 try:
