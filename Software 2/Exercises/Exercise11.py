@@ -1,5 +1,5 @@
 #ex1
-print("------------------------exercise 1-------------------------")
+print("------------------------exercise1-------------------------")
 class Publication:
     def __init__(self, name):
         self.name = name
@@ -32,7 +32,7 @@ magazine.print_info()
 
 
 #ex2
-print("---------------------exercise 2-----------------------------")
+print("---------------------exercise 2----------------------------")
 
 class Car:
 
