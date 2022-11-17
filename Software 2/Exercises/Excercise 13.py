@@ -50,12 +50,10 @@ def airport (ICAO):
             name = row[0]
             location = row[1]
 
-            # print(f"The name of the airport is {row[0]} and it is located in {row[1]}")
-
     response = {
-        "ICAO" : ICAO,
         "Airport" : name,
-        "Location" : location
+        "Location" : location,
+        "ICAO" : ICAO
     }
     return response
 
