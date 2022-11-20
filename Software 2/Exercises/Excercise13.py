@@ -23,8 +23,7 @@ def prime_number(number):
             if (number % i) == 0:
                 isPrime = False
                 break
-            else:
-                isPrime
+           
 
     response = {
         "isPrime" : isPrime,
@@ -37,28 +36,28 @@ if __name__ == '__main__':
 
 
 #exercise2
-app = Flask(__name__)
-@app.route('/airport/<ICAO>')
-def airport (ICAO):
-    sql = "SELECT name, municipality FROM airport"
-    sql += " WHERE ident='" + ICAO + "'"
-    cursor = connection.cursor()
-    cursor.execute(sql)
-    result = cursor.fetchall()
-    if cursor.rowcount > 0:
-        for row in result:
-            name = row[0]
-            location = row[1]
+# app = Flask(__name__)
+# @app.route('/airport/<ICAO>')
+# def airport (ICAO):
+#     sql = "SELECT name, municipality FROM airport"
+#     sql += " WHERE ident='" + ICAO + "'"
+#     cursor = connection.cursor()
+#     cursor.execute(sql)
+#     result = cursor.fetchall()
+#     if cursor.rowcount > 0:
+#         for row in result:
+#             name = row[0]
+#             location = row[1]
 
-    response = {
-        "Airport" : name,
-        "Location" : location,
-        "ICAO" : ICAO
-    }
-    return response
+#     response = {
+#         "Airport" : name,
+#         "Location" : location,
+#         "ICAO" : ICAO
+#     }
+#     return response
 
-if __name__ == '__main__':
-    app.run(use_reloader=True, host='127.0.0.1', port=5000)
+# if __name__ == '__main__':
+#     app.run(use_reloader=True, host='127.0.0.1', port=5000)
 
 
 
