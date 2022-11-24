@@ -2,10 +2,10 @@ import json
 import requests
 
 #exercise1
-# print("----------------------exercise1----------------------------------")
+print("----------------------exercise1----------------------------------")
 
-# response = requests.get("https://api.chucknorris.io/jokes/random").json()
-# print(response["value"])
+response = requests.get("https://api.chucknorris.io/jokes/random").json()
+print(response["value"])
 
 
 #exercise2
